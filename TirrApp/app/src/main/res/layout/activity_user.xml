@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/surname" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayoutSurname"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayoutSurname"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSurname">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxGun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/gun"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayoutName"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxPistol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pistol"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxGun"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxGun" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchPistol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minor"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxPistol"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayoutName"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxPistol"
+                app:layout_constraintVertical_bias="0.5"
+                tools:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PCC"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxPistol"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxPistol" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchPCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minor"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxPCC"
+                app:layout_constraintEnd_toEndOf="@+id/switchPistol"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxPCC"
+                app:layout_constraintVertical_bias="0.5"
+                tools:visibility="visible" />
+
+
+
+            <CheckBox
+                android:id="@+id/checkBoxСarbine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/carbine"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxPCC"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxPCC" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchСarbine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minor"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxСarbine"
+                app:layout_constraintEnd_toEndOf="@+id/switchPCC"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxСarbine"
+                app:layout_constraintVertical_bias="0.5"
+                tools:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/checkBoxActionAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_air"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxСarbine"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxСarbine" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewCategory"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewCategory"
+                app:layout_constraintTop_toTopOf="@+id/textViewCategory" />
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/category"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxActionAir"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxActionAir" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/btn_cancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategory" />
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="@string/btn_save"
+                app:layout_constraintBottom_toBottomOf="@+id/button_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_cancel" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

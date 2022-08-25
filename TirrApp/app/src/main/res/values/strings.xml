@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">TirrApp</string>
+    <string name="text_main_contest">Соревнования</string>
+    <string name="text_main_workout">Тренировки</string>
+    <string name="text_main_personal_info">Персональная информация</string>
+    <string name="text_exercise">База упражнений</string>
+    <string name="text_contest_new">Создать</string>
+    <string name="text_contest_exist">Список сохраненных</string>
+    <string name="text_contest_old">Список прошедших</string>
+    <string name="text_contest_new_info">Основная информация</string>
+    <string name="class_name">Название соревнования</string>
+    <string name="class_name_hint">Свободная форма</string>
+    <string name="tilayout_help_discipline">Выберите дисциплину соревнования</string>
+    <string name="ti_discipline">Выберите дисциплину</string>
+    <string name="text_scope">Тип счета</string>
+    <string name="tilayout_help_scope">Выберите тип счета</string>
+    <string name="ti_status">Статус</string>
+    <string name="tilayout_help_status">Выберите статус соревнования</string>
+    <string name="text_date">Дата проведения</string>
+    <string name="text_place">Место проведения</string>
+    <string name="tilayout_help_place">Выберите место проведения</string>
+    <string name="text_trener">Инструктор</string>
+    <string name="tilayout_help_trener">Выберите инструктора</string>
+    <string name="btn_exercise">Упражнения</string>
+    <string name="btn_member">Участники</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="tilayout_help_text">Введите название соревнования</string>
+    <string name="btn_delete">Кнопка удалить</string>
+    <string name="delete_bnt">delete_bnt</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="pistol">Пистолет</string>
+    <string name="PCC">РСС</string>
+    <string name="gun">Ружье</string>
+    <string name="carbine">Карабин</string>
+    <string name="action_air">Action-Air</string>
+    <string name="category">Категория:</string>
+    <string name="minor">Minor</string>
+    <string name="major">Major</string>
+
+
+    //Перечень дисциплин
+    <string-array name="discipline">
+        <item>Пистолет</item>
+        <item>РСС</item>
+        <item>Ружье</item>
+        <item>Карабин</item>
+        <item>Action-Air</item>
+    </string-array>
+
+    //Перечень методик подсчета очков
+    <string-array name="scope">
+        <item>Comstock</item>
+        <item>Russian Steel</item>
+        <item>Steel Challengeе</item>
+    </string-array>
+
+    //Статусы соревнований
+    <string-array name="status">
+        <item>Клубный</item>
+        <item>Чемпионат муниципального образования</item>
+        <item>Первенство муниципального образования</item>
+        <item>Первенство субъекта</item>
+    </string-array>
+
+    <string-array name="place">
+        <item>МФОЦ \"Патриот\"</item>
+        <item>СК \"Барс\"</item>
+    </string-array>
+
+    //Перечень категорий
+     <string-array name="category">
+        <item>Юниоры</item>
+        <item>Общая</item>
+        <item>Леди</item>
+        <item>Сеньоры</item>
+        <item>Супер сеньоры</item>
+    </string-array>
+
+</resources>

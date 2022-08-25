@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_contest_new_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_contest_new_info"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contest_new_info"
+        tools:layout_editor_absoluteX="-2dp">
+        //app:layout_constraintStart_toStartOf="parent"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_name_contest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/tilayout_help_text"
+                app:helperTextEnabled="true"
+                app:errorEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_name_contest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/class_name"
+                    android:textSize="14sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_discipline"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/tilayout_help_discipline"
+                app:helperTextEnabled="true"
+                app:errorEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_name_contest"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_name_contest"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_name_contest">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tvDiscipline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ti_discipline"
+                    android:inputType="none"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_scope"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/tilayout_help_scope"
+                app:helperTextEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_discipline"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_discipline"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_discipline">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tv_scope"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_scope"
+                    android:inputType="none"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_status"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/tilayout_help_status"
+                app:helperTextEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_scope"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_scope"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_scope">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ti_status"
+                    android:inputType="none"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/text_date"
+                app:helperTextEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_status"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_status"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_status">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_date"
+                    android:inputType="datetime"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_place"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/tilayout_help_place"
+                app:helperTextEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_data"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_data"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_data">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tv_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_place"
+                    android:inputType="none"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilayout_trener"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="@string/tilayout_help_trener"
+                app:helperTextEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_place"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_place"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_place">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tv_trener"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_trener"
+                    android:inputType="none"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_exercise"
+                app:layout_constraintEnd_toEndOf="@+id/tilayout_trener"
+                app:layout_constraintStart_toStartOf="@+id/tilayout_trener"
+                app:layout_constraintTop_toBottomOf="@+id/tilayout_trener"
+                tools:layout_editor_absoluteX="166dp" />
+
+            <TextView
+                android:id="@+id/tv_exercise_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Здесь будет переченьупражнений"
+                app:layout_constraintEnd_toEndOf="@+id/btn_exercise"
+                app:layout_constraintStart_toStartOf="@+id/btn_exercise"
+                app:layout_constraintTop_toBottomOf="@+id/btn_exercise" />
+
+            <Button
+                android:id="@+id/btn_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_member"
+                app:layout_constraintEnd_toEndOf="@+id/tv_exercise_list"
+                app:layout_constraintStart_toStartOf="@+id/tv_exercise_list"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exercise_list" />
+
+
+            <TextView
+                android:id="@+id/tv_membet_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Здесь будет список участников"
+                app:layout_constraintEnd_toEndOf="@+id/btn_member"
+                app:layout_constraintStart_toStartOf="@+id/btn_member"
+                app:layout_constraintTop_toBottomOf="@+id/btn_member" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/btn_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_save" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

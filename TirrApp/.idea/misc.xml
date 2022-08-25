@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/activity_events.xml" value="0.33" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/activity_main.xml" value="0.2087912087912088" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/activity_training.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/activity_user.xml" value="0.25" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/contest_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/contest_new_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/dropdown_item.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/79175/Documents/AndroidStudio/TirrApp/app/src/main/res/layout/rv_event.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
