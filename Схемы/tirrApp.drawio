@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T20:26:35.227Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="mCLMO0UFeTTNLcDmXDav" version="20.2.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-08-26T20:53:59.658Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="ftBunqoyRHntfYQIzGA3" version="20.2.7" type="github" pages="2">
   <diagram id="GpzrGk0zTV-9qYaGS__b" name="Структура БД">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -384,9 +384,6 @@
         <mxCell id="zmli02NWincT4OW4gjHA-11" value="Тренер" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1265" y="-680" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zmli02NWincT4OW4gjHA-12" value="Стартовая позиция" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1265" y="-640" width="150" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="zmli02NWincT4OW4gjHA-13" value="Текстовый вывод" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="22" y="670" width="120" height="30" as="geometry" />
         </mxCell>
@@ -561,6 +558,21 @@
         </mxCell>
         <mxCell id="zAyHb0cV9iOtZLg47Ij--38" value="После нажатия на позицию переходим в режим ее редактироавания" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1520" y="-339" width="150" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="zAyHb0cV9iOtZLg47Ij--39" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="540" width="320" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="zAyHb0cV9iOtZLg47Ij--40" value="Название" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="554" width="150" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="zAyHb0cV9iOtZLg47Ij--41" value="Количество раундов" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="599" width="150" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="zAyHb0cV9iOtZLg47Ij--42" value="Стартовая позиция" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="639" width="150" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="zAyHb0cV9iOtZLg47Ij--43" value="Брифинг" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="890" width="150" height="31" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
